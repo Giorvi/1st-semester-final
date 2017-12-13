@@ -1,19 +1,19 @@
 function checkPrime(number) {
+    if (number % 1 != 0 || number <= 0) {
+        return "Not Prime ";
 
-      if (number % 1 === 0 || ==2) {
-        return "Prime";
-
-    } else if (number > 1) {
-        for (var i = 2; i < number/2; i++){
-            if(number % i == 0){
-
-                return "Prime"
+    } else if (number > 4) {
+        for (var i = 2; i <= number / 2; i++) {
+            if (number % 1 == 0 || number % i == 0) {
+                return "Not Prime"
             }
         }
-
+        return "Prime"
     } else {
+        return "Prime"
 
-     return "Not Prime";
-
-
+    }
 }
+
+
+
