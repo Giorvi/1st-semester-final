@@ -1,3 +1,4 @@
+// check prime number
 function checkPrime(number) {
     if (number % 1 != 0 || number <= 0) {
         return "Not Prime ";
